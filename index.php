@@ -6,12 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
-<body>
+<body class="mx_w">
+    <div class="block">
+    <h2>Задание 1</h2>
     <?
 
-    // задание 1
+    
     $array = ['Гарифуллина', 'Сидоров', 'Тарасова', 'Федоров', 'Петрова', 'Климов'];
     $name;
 
@@ -25,11 +28,22 @@
             $name = 'Такого в списке нет';
         }
     }
+    echo '<br>';
+    echo '<br>';
+
     echo $name;
     echo '<br>';
+    echo '<br>';
+
     $expelled = array_pop($array);
     echo $expelled;
+?>
+</div>
 
+<div class="block">
+    <h2>Задание 2</h2>
+
+<?
     // задание 2
     $hobby = [
         "Спортивный" => "Сидоров",
@@ -48,7 +62,11 @@
         echo '<br>';
         array_push($element, $value);
     }
-
+?>
+</div>
+<div class="block">
+    <h2>Задание 3</h2>
+<?
     // задание 3
     $student = ['Имя' => 'Альмира', 'Фамилия' => 'Гарифуллина', 'Группа' => '425ВЕБ', 'Хобби' => ['Ушу', 'Тренерство'], 'Соцсети' => ['Telegram' => '@Aaalllmmmiii', 'vk' => 'Almira']];
 
@@ -65,6 +83,7 @@
         }
     }
     ?>
+    </div>
 </body>
 
 </html>
